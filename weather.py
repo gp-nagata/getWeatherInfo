@@ -3,9 +3,6 @@ from bs4 import BeautifulSoup
 
 def GetYahooWeather(AreaCode):
     """
-    Yahoo天気予報をスクレイピングする関数。
-
-    Parameters
     ----------
     AreaCode : int
         対象となる地域コードを指定。
