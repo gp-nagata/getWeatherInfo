@@ -1,2 +1,2 @@
-# wether
-get wether info
+# weather
+get weather info
