@@ -5,10 +5,10 @@ def get_yahoo_weather(area_code):
     # Yahoo天気情報のURLを生成
     url = f"https://weather.yahoo.co.jp/weather/jp/13/{area_code}.html"
 
-    # URLにアクセスしてHTMLを取得
+    # URLにアクセスしてHTMLを取得。情報を取得するために、どのページから情報元に侵入するか。実際にURLに行き、テキストデータを取得する処理をはじめに書く。
     r = requests.get(url)
 
-    # BeautifulSoupを使ってHTMLを解析
+    # BeautifulSoupを使ってHTMLを解析よく使うプログラムのかたまりをライブラリと呼ぶが、そのひとつが今回のBeautifulSoup。今回のPythonでは、Webサイトの情報を簡単に取得するために使う。
     soup = BeautifulSoup(r.text, 'html.parser')
 
     # 天気情報を含むHTML要素を取得
